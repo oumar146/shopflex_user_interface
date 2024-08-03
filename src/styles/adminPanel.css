@@ -1,0 +1,35 @@
+.side-bar{
+    background-color: rgb(40, 39, 39);
+    width: 35vh;
+    height: 100vh;
+}
+
+.side-bar-list{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.selected{
+    padding: 15px 20px;
+    border: none;
+    background-color: rgb(169, 164, 164);
+    color : black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.item{
+    padding: 15px 20px;
+    border: none;
+    color: gray;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+.item:hover{
+    color : white;
+}
