@@ -32,35 +32,34 @@ const Sidebar = () => {
           <span>Commande</span>
           </div>
         </li>
+        
+        <li className="nav-item" onClick={() => {navigate('/admin/category')}}>
+          <div className="nav-link collapsed">
+          <i class="bi bi-cart"></i>
+          <span>Catégorie</span>
+          </div>
+        </li>
 
-        <li class="nav-item">
-        <a className="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="">
-          <i className="bi bi-box-seam"></i>
-          <span>Produit</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li onClick={() => {navigate('/admin/product')}}>
-            <a>
-              <i class="bi bi-circle"></i><span>Tous les produits</span>
-            </a>
-          </li>
-          <li onClick={() => {navigate('/admin/category')}}>
-            <a>
-              <i class="bi bi-circle"></i><span>Catégorie</span>
-            </a>
-          </li>
-          <li onClick={() => {navigate('/admin/color')}}>
-            <a>
-              <i class="bi bi-circle"></i><span>Couleur</span>
-            </a>
-          </li>
-          <li onClick={() => {navigate('/admin/brand')}}>
-            <a>
-              <i class="bi bi-circle"></i><span>Marque</span>
-            </a>
-          </li>
-        </ul>
-      </li>
+        <li className="nav-item" onClick={() => {navigate('/admin/color')}}>
+          <div className="nav-link collapsed">
+          <i class="bi bi-palette"></i>
+          <span>Couleur</span>
+          </div>
+        </li>
+
+        <li className="nav-item" onClick={() => {navigate('/admin/brand')}}>
+          <div className="nav-link collapsed">
+          <i class="bi bi-grid-fill"></i>
+          <span>Marque</span>
+          </div>
+        </li>
+
+        <li className="nav-item" onClick={() => {navigate('/admin/product')}}>
+          <div className="nav-link collapsed">
+          <i class="bi bi-box-seam"></i>
+          <span>Produit</span>
+          </div>
+        </li>
 
         <li className="nav-item" onClick={() => {handleLogout(navigate)}}>
           <div className="nav-link collapsed">

@@ -61,6 +61,12 @@ const UsersList = () => {
                         <td><a href={`mailto:${user.email}`}>{user.email}</a></td>
                         <td>{user.phone}</td>
                         <td>{user.role_name}</td>
+                        {/* modal */}
+                        <td><i class="bi bi-eye"></i></td>
+                        {/* autre page  */}
+                        <td><i class="bi bi-pen"></i></td>
+                        {/* modal  */}
+                        <td><i class="bi bi-trash"></i></td>
                       </tr>
                       ))
                       }
